@@ -83,4 +83,43 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
 /* /Container Left */
 
 
+/* /Container Right */
+.right_sections{
+    width: 1145px;
+    height: 800px;
+    background-color: gold;
+
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+
+.contact_name{
+    width: 100%;
+    height: 60px;
+    background-color: var(--bool-main-account);
+
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+
+.messages{
+    width: 100%;
+    height: 650px;
+    background-color: green;
+
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+
+.message_box{
+    width: 100%;
+    height: 90px;
+    background-color: magenta;
+
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+/* /Container Right */
+
+
 
