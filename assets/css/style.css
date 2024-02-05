@@ -121,5 +121,32 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
 }
 /* /Container Right */
 
+/* Meta for Desktop */
+/* /Meta for Desktop */
+
+
+/* Meta for Tablet */
+@media screen and (max-width: 991px) {
+    .account{
+        width: 30%;
+    }
+
+    .notifications, .search, .contacts_text{
+        display: none;
+    }
+    
+    .left_sections{
+        width: 200px;
+        height: ;
+    }
+}
+/* /Meta for Tabet */
+
+
+/* Meta for Mobile */
+@media screen and (max-width: 540px) {
+    
+}
+/* /Meta for Mobile */
 
 
