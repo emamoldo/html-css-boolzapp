@@ -20,7 +20,67 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
 }
 /* /Body */
 
+/* Main Container */
+.container{
+    max-width: 1545px;
+    width: 80%;
+    height: 800px;
+    margin: 80px auto;
+    background-color: blue;
+    display: flex;
 
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+/* /Main Container */
+
+
+/* Container Left */
+.left_sections{
+    width: 400px;
+    height: 800px;
+    background-color: yellow;
+
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+
+.account{
+    width: 400px;
+    height: 60px;
+    background-color: var(--bool-main-account);
+
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+
+.notifications{
+    width: 400px;
+    height: 80px;
+    background-color: var(--bool-notification-backgc);
+
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+
+.search{
+    width: 400px;
+    height: 40px;
+    background-color: var(--bool-main-account);
+
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+
+.contacts{
+    width: 400px;
+    height: 620px;
+    background-color: white;
+
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+/* /Container Left */
 
 
 
