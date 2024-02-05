@@ -145,7 +145,13 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
 
 /* Meta for Mobile */
 @media screen and (max-width: 540px) {
-    
+    .left_sections{
+        display: none;
+    }
+
+    .container{
+        width: ;
+    }
 }
 /* /Meta for Mobile */
 
