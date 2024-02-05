@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bool-body-backgc-top: #019689FF;
+    --bool-body-backgc-bottom: #dbdad5;
+    --bool-main-account: #ebeaeb;
+    --bool-notification-backgc: #8edafcFF;
+    --bool-notification-text: #17232a;
+    --bool-notification-link: #5a7e8b;
+    --bool-search: #7b808c;
+    --bool-message-text: #c9d7e9;
+}
+
+/* Body */
+body{ /* --> Da aggiungere il comando per la sfumatura */
+    background-color: var(--bool-body-backgc-bottom);
+}
+/* /Body */
+
+
+
+
+
