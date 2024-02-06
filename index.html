@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Boolzapp</title>
 </head>
 
 <body>
-   <!-- Main with the Main Container -->
-   <main class="container">
+    <!-- Main with the Main Container -->
+    <main class="container">
 
-    <!-- div with Container Left -->
-    <div class="container_left">
-        <div class="left_sections">
-            <section class="account"></section>
-            <section class="notifications"></section>
-            <section class="search"></section>
-            <section class="contacts">
-                <section class="contacts_text"></section>
-            </section>
+        <!-- div with Container Left -->
+        <div class="container_left">
+            <div class="left_sections">
+                <section class="account">
+                    <img class="profile_img" src="./assets/img/avatar_io.jpg" alt="">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </section>
+
+                <section class="notifications">
+                
+                    <strong>Ricevi notifiche di nuovi messaggi</strong><br>
+                    <a href="">Attiva notifiche desktop</a>
+                </section>
+
+                <section class="search">
+                     <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <input id="search" type="text" name="nome" placeholder=" Cerca o inizia una nuova chat">
+                </section>
+
+                <section class="contacts">
+                    <img class="profile_img" src="./assets/img/avatar_1.jpg" alt="">
+                    <strong></strong>
+                    <p class="contacts_text"></p>
+                </section>
+            </div>
         </div>
-    </div>
-    <!-- /div with Container Left -->  
+        <!-- /div with Container Left -->
 
-     <!-- div with Container Right -->
-     <div class="container_right">
-        <div class="right_sections">
-            <section class="contact_name"></section>
-            <section class="messages"></section>
-            <section class="message_box"></section>
+        <!-- div with Container Right -->
+        <div class="container_right">
+            <div class="right_sections">
+                <section class="contact_name"></section>
+                <section class="messages"></section>
+                <section class="message_box"></section>
+            </div>
         </div>
-</div>
-<!-- div with Container Right -->
+        <!-- div with Container Right -->
 
-   </main> 
+    </main>
 </body>
+
 </html>
