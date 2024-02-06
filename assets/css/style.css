@@ -33,7 +33,7 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
 
 /* Container Left */
 .left_sections{
-   
+   width: 350px;
 }
 
 .account{
@@ -42,7 +42,7 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
     align-items: center;
 }
 
-.profile_img{
+.profile_img, .profile_img1{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -65,30 +65,41 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
     width: 95%;
 }
 
-.contacts{
-    width: 400px;
-    height: 620px;
+.name{
+    display: flex;
+    justify-content: space-between;
 }
+
+.contacts{
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.img_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts_text, .hour{
+    color: var(--bool-message-text);
+}
+
 /* /Container Left */
 
 
 /* /Container Right */
 .right_sections{
-    width: 800px;
-    height: 800px;
+   
 }
 
 .contact_name{
-    width: 100%;
-    height: 60px;
-
+}
 .messages{
-    width: 100%;
-    height: 650px;
-
+ 
+}
 .message_box{
-    width: 100%;
-    height: 90px;
+    
 }
 /* /Container Right */
 
@@ -99,16 +110,14 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
 /* Meta for Tablet */
 @media screen and (max-width: 991px) {
     .account{
-        width: 30%;
     }
 
-    .notifications, .search, .contacts_text{
+    .notifications, .search, .img_text{
         display: none;
     }
     
     .left_sections{
-        width: 200px;
-        height: ;
+        width: 100px;
     }
 }
 /* /Meta for Tabet */
@@ -120,9 +129,6 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
         display: none;
     }
 
-    .container{
-        width: ;
-    }
 }
 /* /Meta for Mobile */
 
