@@ -89,12 +89,18 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
 
 
 /* /Container Right */
-.right_sections{
-   
+.contact_name{
+    background-color: var(--bool-main-account);
+    width: 600px;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid gray;
 }
 
-.contact_name{
+#access{
+    color: var(--bool-search);
 }
+
 .messages{
  
 }
@@ -126,6 +132,10 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
 /* Meta for Mobile */
 @media screen and (max-width: 540px) {
     .left_sections{
+        display: none;
+    }
+
+    .utilitys{
         display: none;
     }
 
