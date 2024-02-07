@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -21,6 +22,7 @@
 body {
     /* --> Da aggiungere il comando per la sfumatura */
     background-image: linear-gradient(to bottom, #019689FF 0%, #019689FF 120px, #dbdad5 120px, #dbdad5 100%);
+    height: 100vh;
 }
 
 /* /Body */
@@ -29,8 +31,9 @@ body {
 .container {
     max-width: 1200px;
     width: 80%;
-    height: 800px;
-    margin: 80px auto;
+    height: 100%;
+    padding: 80px 0;
+    margin: 0 auto;
     display: flex;
 }
 
@@ -38,11 +41,16 @@ body {
 
 
 /* Container Left */
+.container_left{
+    height: 100%;
+}
+
 .left_sections {
     width: 350px;
     overflow-y: scroll;
 }
 
+/* Account Section */
 .account {
     background-color: var(--bool-main-account);
     display: flex;
@@ -58,18 +66,19 @@ body {
 }
 
 .profile_img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     padding: 1rem;
 }
+/* /Account Section */
 
+/* Notification Section */
 .notifications {
     padding: 1rem;
     background-color: var(--bool-notification-backgc);
     align-items: center;
     display: flex;
-    padding: 2rem;
     gap: 1rem;
 }
 
@@ -77,16 +86,20 @@ body {
     background-color: white;
     color: var(--bool-notification-backgc);
     border-radius: 50%;
+    padding: 0.9rem;
 }
 
 .notification_text {
     display: flex;
     flex-direction: column;
 }
+/* /Notification Section */
 
+/* Search Section */
 .search {
     padding: 1rem;
     background-color: var(--bool-main-account);
+    border-bottom: 1px solid var(--bool-action);
 }
 
 .search_box {
@@ -107,11 +120,15 @@ body {
     display: flex;
     justify-content: space-between;
 }
+/* /Search Section */
 
+/* Contacts Section */
 .contacts {
     background-color: white;
     display: flex;
     align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--bool-action);
 }
 
 .meta {
@@ -129,11 +146,23 @@ body {
 .hour {
     color: var(--bool-message-text);
 }
-
+/* /Contacts Section */
 /* /Container Left */
 
 
 /* /Container Right */
+.container_right{
+    height: 100%;
+}
+
+.right_sections{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Account Section */
 .contact_name {
     background-color: var(--bool-main-account);
     width: 650px;
@@ -156,13 +185,16 @@ body {
     color: var(--bool-action);
     align-items: center;
 }
+/* /Account Section */
 
+/* Messages Section */
 .messages {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    height: 390px;
     padding: 2rem;
+    flex-grow: 1;
+    background: url(../img/mine.jpg);
     gap: 1rem;
 }
 
@@ -183,7 +215,9 @@ body {
     align-self: flex-start;
     background-color: var(--bool-recived-backgc);
 }
+/* /Messages Section */
 
+/* Messages Box Section */
 .message_box{
     display: flex;
     background-color: var(--bool-main-account);
@@ -217,12 +251,8 @@ body {
         padding: 0 1rem;
       }
 }
-
+/* /Messages Box Section */
 /* /Container Right */
-
-/* Meta for Desktop */
-/* /Meta for Desktop */
-
 
 /* Meta for Tablet */
 @media screen and (max-width: 991px) {
@@ -253,8 +283,6 @@ body {
     .message_box{
         padding: 0.5rem;
     }
-  
-
 }
 
 /* /Meta for Mobile */
