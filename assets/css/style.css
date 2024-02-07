@@ -40,6 +40,7 @@ body {
 /* Container Left */
 .left_sections {
     width: 350px;
+    overflow-y: scroll;
 }
 
 .account {
@@ -56,8 +57,7 @@ body {
     color: var(--bool-action);
 }
 
-.profile_img,
-.profile_img1 {
+.profile_img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -161,16 +161,11 @@ body {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 390px;
     padding: 2rem;
     gap: 1rem;
 }
 
-.background {
-    width: 650px;
-    height: 600px;
-    display: flex;
-}
 
 .sent,
 .recived {
@@ -189,7 +184,39 @@ body {
     background-color: var(--bool-recived-backgc);
 }
 
-.message_box {}
+.message_box{
+    display: flex;
+    background-color: var(--bool-main-account);
+    align-items: center;
+    gap: 2rem;
+    height: 50px;
+}
+
+.smile{
+    padding-left: 1rem;
+}
+
+.microphone{
+    padding-right: 1rem;
+}
+
+.microphone, .smile{
+    text-align: center;
+    color: var(--bool-action);
+}
+
+.message{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    > input {
+        height: 30px;
+        border-radius: 0.5rem;
+        border: none;
+        width: 100%;
+        padding: 0 1rem;
+      }
+}
 
 /* /Container Right */
 
@@ -218,13 +245,15 @@ body {
 
 /* Meta for Mobile */
 @media screen and (max-width: 540px) {
-    .left_sections {
+    .left_sections, .utilitys, .microphone, .smile
+    {
         display: none;
     }
-
-    .utilitys {
-        display: none;
+    
+    .message_box{
+        padding: 0.5rem;
     }
+  
 
 }
 
