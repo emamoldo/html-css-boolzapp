@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-:root{
+:root {
     --bool-body-backgc-top: #019689FF;
     --bool-body-backgc-bottom: #dbdad5;
     --bool-main-account: #ebeaeb;
@@ -12,76 +12,84 @@
     --bool-notification-link: #5a7e8b;
     --bool-search: #7b808c;
     --bool-message-text: #c9d7e9;
+    --bool-sent-backgc: #d4f9bb;
+    --bool-recived-backgc: #fffefe;
+
 }
 
 /* Body */
-body{ /* --> Da aggiungere il comando per la sfumatura */
-     background-image: linear-gradient(to bottom, #019689FF 0%, #019689FF 120px, #dbdad5 120px, #dbdad5 100%); 
+body {
+    /* --> Da aggiungere il comando per la sfumatura */
+    background-image: linear-gradient(to bottom, #019689FF 0%, #019689FF 120px, #dbdad5 120px, #dbdad5 100%);
 }
+
 /* /Body */
 
 /* Main Container */
-.container{
+.container {
     max-width: 1200px;
     width: 80%;
     height: 800px;
     margin: 80px auto;
     display: flex;
 }
+
 /* /Main Container */
 
 
 /* Container Left */
-.left_sections{
-   width: 350px;
+.left_sections {
+    width: 350px;
 }
 
-.account{
+.account {
     background-color: var(--bool-main-account);
     display: flex;
     align-items: center;
 }
 
-.profile_img, .profile_img1{
+.profile_img,
+.profile_img1 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     padding: 1rem;
 }
 
-.notifications{
+.notifications {
     padding: 1rem;
     background-color: var(--bool-notification-backgc);
     align-items: center;
 }
 
-.search{
+.search {
     padding: 1rem;
     background-color: var(--bool-main-account);
 }
 
-#search{
+#search {
     height: 20px;
     width: 95%;
 }
 
-.name{
+.name {
     display: flex;
     justify-content: space-between;
 }
 
-.contacts{
+.contacts {
     background-color: white;
     display: flex;
     align-items: center;
 }
 
-.img_text{
+.img_text {
     display: flex;
     flex-direction: column;
 }
 
-.contacts_text, .hour{
+.contacts_text,
+.hour {
     color: var(--bool-message-text);
 }
 
@@ -89,24 +97,53 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
 
 
 /* /Container Right */
-.contact_name{
+.contact_name {
     background-color: var(--bool-main-account);
-    width: 600px;
+    width: 650px;
     display: flex;
     align-items: center;
     border-left: 1px solid gray;
 }
 
-#access{
+#access {
     color: var(--bool-search);
 }
 
-.messages{
- 
+.messages {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 2rem;
+    gap: 1rem;
 }
-.message_box{
-    
+
+.background {
+    width: 650px;
+    height: 600px;
+    display: flex;
 }
+
+.sent, .recived{
+    width: 350px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.sent{
+    align-self: flex-end;
+    background-color: var(--bool-sent-backgc);
+}
+
+.recived{
+    align-self: flex-start;
+    background-color: var(--bool-recived-backgc);
+}
+
+.message_box {
+
+}
+
 /* /Container Right */
 
 /* Meta for Desktop */
@@ -115,31 +152,32 @@ body{ /* --> Da aggiungere il comando per la sfumatura */
 
 /* Meta for Tablet */
 @media screen and (max-width: 991px) {
-    .account{
-    }
+    .account {}
 
-    .notifications, .search, .img_text{
+    .notifications,
+    .search,
+    .img_text {
         display: none;
     }
-    
-    .left_sections{
+
+    .left_sections {
         width: 100px;
     }
 }
+
 /* /Meta for Tabet */
 
 
 /* Meta for Mobile */
 @media screen and (max-width: 540px) {
-    .left_sections{
+    .left_sections {
         display: none;
     }
 
-    .utilitys{
+    .utilitys {
         display: none;
     }
 
 }
+
 /* /Meta for Mobile */
-
-
