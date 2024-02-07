@@ -14,7 +14,7 @@
     --bool-message-text: #c9d7e9;
     --bool-sent-backgc: #d4f9bb;
     --bool-recived-backgc: #fffefe;
-
+    --bool-action: #b0b0b1;
 }
 
 /* Body */
@@ -45,7 +45,15 @@ body {
 .account {
     background-color: var(--bool-main-account);
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+    color: var(--bool-action);
 }
 
 .profile_img,
@@ -60,11 +68,34 @@ body {
     padding: 1rem;
     background-color: var(--bool-notification-backgc);
     align-items: center;
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.bell {
+    background-color: white;
+    color: var(--bool-notification-backgc);
+    border-radius: 50%;
+}
+
+.notification_text {
+    display: flex;
+    flex-direction: column;
 }
 
 .search {
     padding: 1rem;
     background-color: var(--bool-main-account);
+}
+
+.search_box {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--bool-recived-backgc);
+    padding: 0.5rem;
+    color: var(--bool-action);
 }
 
 #search {
@@ -81,6 +112,12 @@ body {
     background-color: white;
     display: flex;
     align-items: center;
+}
+
+.meta {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .img_text {
@@ -105,8 +142,19 @@ body {
     border-left: 1px solid gray;
 }
 
+.utility{
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
 #access {
     color: var(--bool-search);
+}
+
+.utilitys {
+    color: var(--bool-action);
+    align-items: center;
 }
 
 .messages {
@@ -124,25 +172,24 @@ body {
     display: flex;
 }
 
-.sent, .recived{
+.sent,
+.recived {
     width: 350px;
     border-radius: 10px;
     padding: 1rem;
 }
 
-.sent{
+.sent {
     align-self: flex-end;
     background-color: var(--bool-sent-backgc);
 }
 
-.recived{
+.recived {
     align-self: flex-start;
     background-color: var(--bool-recived-backgc);
 }
 
-.message_box {
-
-}
+.message_box {}
 
 /* /Container Right */
 
@@ -156,7 +203,8 @@ body {
 
     .notifications,
     .search,
-    .img_text {
+    .img_text,
+    .actions {
         display: none;
     }
 
